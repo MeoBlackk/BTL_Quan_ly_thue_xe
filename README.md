@@ -55,9 +55,9 @@ Hệ thống Quản lý Đoàn viên trong trường Đại học được xây 
 ### Trang quản lý xe
 <img width="1886" height="940" alt="image" src="https://github.com/user-attachments/assets/689343e9-c153-4955-9fb6-e508fa7a8fed" />
 ### Trang quản lý khách hàng
-<img width="1890" height="932" alt="image" src="https://github.com/user-attachments/assets/2b5e861a-8a59-4505-8149-4ceb1ec6b503" />
+<img width="1890" height="932" alt="image" src="https://github.com/user-attachments/assets/07e3c62a-4040-4a50-9355-4e2d391596ef" />
 ### Trang doanh thu
-<img width="1901" height="939" alt="image" src="https://github.com/user-attachments/assets/f3c88b32-5c7e-4911-b977-303523e5e4e3" />
+<img width="1901" height="939" alt="image" src="https://github.com/user-attachments/assets/4a43e1fc-4992-4a66-9db9-e67af754fc48" />
 
 ## ⚙️ 4. Cài đặt
 
