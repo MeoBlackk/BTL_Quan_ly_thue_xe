@@ -1,0 +1,357 @@
+/* 🌈 Reset + Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9fafc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 🧭 Navbar */
+.navbar {
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 14px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #222;
+}
+.logo span {
+  color: #0078ff;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #444;
+  margin-left: 22px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.nav-links a:hover, .nav-links .active {
+  color: #0078ff;
+}
+.btn-login {
+  background: #0078ff;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 25px;
+  margin-left: 25px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.btn-login:hover {
+  background: #005fcc;
+}
+/* 🌇 Hero banner */
+.hero {
+  height: 550px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80')
+      center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+/* 👇 hộp chữ trắng mờ */
+.hero-overlay {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 50px 60px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #e9e9e9;
+  margin-bottom: 30px;
+}
+
+/* 🌈 Nút bắt đầu ngay */
+.btn-hero {
+  background: linear-gradient(90deg, #007bff, #00bfff);
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+}
+.btn-hero:hover {
+  background: linear-gradient(90deg, #0066e4, #00a3e0);
+  transform: translateY(-2px);
+}
+
+/* 🪶 Phần Xe nổi bật xuống thấp hơn */
+.featured-section {
+  margin-top: 80px;
+}
+
+/* 🌅 Hero */
+.hero {
+  background: linear-gradient(rgba(0, 120, 255, 0.2), rgba(255,255,255,0.6)),
+              url('https://cdn.pixabay.com/photo/2022/02/25/21/13/car-7034276_1280.jpg') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+}
+.hero-overlay {
+  background: rgba(255,255,255,0.7);
+  padding: 40px 60px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.hero-overlay h1 {
+  font-size: 2.4rem;
+  color: #111;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.hero-overlay p {
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+.btn-primary {
+  background: #0078ff;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.btn-primary:hover {
+  background: #005fcc;
+  transform: translateY(-2px);
+}
+
+/* 🚘 Featured Cars */
+.featured {
+  padding: 60px 0;
+  background: #ffffff;
+  text-align: center;
+  padding: 50px 20px;
+}
+.featured h2 {
+  margin-bottom: 40px;
+  color: #0078ff;
+  font-weight: 700;
+}
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  width: 90%;
+  margin: auto;
+}
+.car-card {
+  background: #fdfdfd;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  overflow: hidden;
+  transition: 0.3s;
+}
+.car-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.car-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+.car-card h3 {
+  margin: 15px 0 5px;
+  color: #222;
+}
+.car-card p {
+  color: #555;
+  margin-bottom: 15px;
+}
+.btn-book {
+  display: inline-block;
+  margin-bottom: 20px;
+  background: #0078ff;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.btn-book:hover {
+  background: #005fcc;
+}
+
+/* 🔐 Login */
+.login-container {
+ 
+      display: flex
+;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80vh;
+    background: linear-gradient(to bottom right, #eef4ff, #ffffff);
+    flex-direction: column;
+    /* align-content: center; */
+    flex-wrap: nowrap;
+}
+.login-form {
+  background: white;
+  padding: 40px 50px;
+  border-radius: 15px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  text-align: center;
+  width: 350px;
+}
+.login-form h2 {
+  margin-bottom: 25px;
+  color: #0078ff;
+}
+.login-form input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  transition: 0.3s;
+}
+.login-form input:focus {
+  border-color: #0078ff;
+  box-shadow: 0 0 4px rgba(0,120,255,0.3);
+}
+.login-form .btn-primary {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+.login-form a {
+  color: #0078ff;
+  text-decoration: none;
+}
+
+/* ⚫ Footer */
+footer {
+  background: #f1f5f9;
+  padding: 20px;
+  text-align: center;
+  color: #555;
+  margin-top: 50px;
+  font-size: 0.95rem;
+}
+/* 🌐 MENU NÂNG CẤP */
+.navbar {
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 18px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  width: 88%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #111;
+}
+.logo span {
+  color: #0078ff;
+}
+
+/* 🔹 Link menu */
+.nav-links a {
+  text-decoration: none;
+  color: #222;
+  margin-left: 30px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #0078ff, #00b7ff);
+  left: 0;
+  bottom: -4px;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #0078ff;
+}
+
+/* 🔘 Nút đăng nhập */
+.btn-login {
+  background: linear-gradient(90deg, #0078ff, #00b7ff);
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 30px;
+  margin-left: 35px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0,120,255,0.3);
+}
+.btn-login:hover {
+  background: linear-gradient(90deg, #0065dd, #0099dd);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(0,120,255,0.4);
+}
